@@ -26,7 +26,7 @@ ui = function(request) {
                  uiOutput("ui1"),               
           )
         ),
-        selectInput('risk', 'Risk distibution', c("Normal [mu, sigma]","Uniform [lb, ub]", "Custom")),
+        selectInput('risk', 'Risk distribution', c("Normal [mu, sigma]","Uniform [lb, ub]", "Custom")),
         conditionalPanel("input.risk=='Custom'", #ns=ns,
                          {require(shinyAce)
                            tagList(
